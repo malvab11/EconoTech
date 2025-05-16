@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EconoTech | Especialistas en Computadoras y Gaming</title>
+    <link rel="icon" href="Sources/Logo.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabecera superior -->
+    <div class="top-header">
+        <div class="container-80">
+            <div class="row py-2 align-items-center text-white small">
+                <div class="col-12 col-md-4 fw-bold text-start mb-1 mb-md-0">
+                    Lunes - Sábado: 9:00 AM - 9:00 PM
+                </div>
+                <div class="col-12 col-md-4 fw-bold text-center mb-1 mb-md-0">
+                    Visítanos en *************
+                </div>
+                <div class="col-12 col-md-4 fw-bold text-end">
+                    Llámanos: (+51) 948474409
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="d-flex justify-content-between align-items-center py-3 border-bottom" role="banner">
+            <a href="index.html" class="logo d-flex align-items-center" aria-label="Inicio EconoTech">
+                <img src="Sources/Logo.png" alt="Logo de EconoTech" height="50" />
+            </a>
+            <!-- Menú de Navegación -->
+            <nav aria-label="Navegación principal">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="Pages/catalog.html">Laptops</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="Pages/catalog.html">Computadoras</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="Pages/catalog.html">Impresoras</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="Pages/catalog.html">Componentes</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="Pages/catalog.html">Todos los Productos</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="Pages/catalog.html">Servicios</a></li>
+                </ul>
+            </nav>
+            <!-- Items de Navegación -->
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-link p-0" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a href="Pages/catalog.html">
+                <button class="btn btn-link p-0" aria-label="Carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+                </a>
+                <a href="Pages/login.html">
+                <button class="btn btn-link p-0" aria-label="Usuario"><i class="fa-regular fa-circle-user"></i></button>
+                </a>
+            </div>
+        </header>
+
+        <!-- Carrusel principal -->
+        <section aria-label="Carrusel principal" class="my-4">
+            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="Sources/Imagen_Corrousel.png" class="d-block w-100"
+                            alt="Imagen de promoción principal" />
+                    </div>
+                    <!-- Conseguir imágenes para colocar en el carrusel -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Sección de Nuevos Productos -->
+        <section class="my-5" aria-labelledby="nuevos-productos">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 id="nuevos-productos" class="h4">Nuevos Productos</h2>
+                <a href="Pages/catalog.html" class="text-primary">Ver todos los productos</a>
+            </div>
+            <div class="product-carousel">
+                <!-- Producto 1 -->
+                <div class="card product-card">
+                    <div class="stock-badge px-3 pt-3">
+                        <span class="badge bg-success">En stock</span>
+                    </div>
+                    <img src="Sources/Tablets/tablet.png" class="card-img-top" alt="Producto 1" />
+                    <div class="card-body d-flex flex-column">
+                        <div class="rating mb-1">
+                            <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                            <span class="text-muted ms-1">Reviews (4)</span>
+                        </div>
+                        <p class="card-text flex-grow-1">
+                            EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-One
+                        </p>
+                        <div class="prices mt-auto">
+                            <span class="price-old">S/ 499.00</span>
+                            <span class="price-discount">S/ 499.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="card product-card">
+                    <div class="stock-badge px-3 pt-3">
+                        <span class="badge bg-danger">Sin stock</span>
+                    </div>
+                    <img src="Sources/Computadoras/pc1.png" class="card-img-top" alt="Producto 2" />
+                    <div class="card-body d-flex flex-column">
+                        <div class="rating mb-1">
+                            <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                            <span class="text-muted ms-1">Reviews (4)</span>
+                        </div>
+                        <p class="card-text flex-grow-1">
+                            EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-One
+                        </p>
+                        <div class="prices mt-auto">
+                            <span class="price-old">S/ 499.00</span>
+                            <span class="price-discount">S/ 499.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="card product-card">
+                    <div class="stock-badge px-3 pt-3">
+                        <span class="badge bg-success">Sin stock</span>
+                    </div>
+                    <img src="Sources/Computadoras/pc2.png" class="card-img-top" alt="Producto 3" />
+                    <div class="card-body d-flex flex-column">
+                        <div class="rating mb-1">
+                            <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                            <span class="text-muted ms-1">Reviews (4)</span>
+                        </div>
+                        <p class="card-text flex-grow-1">
+                            EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-One
+                        </p>
+                        <div class="prices mt-auto">
+                            <span class="price-old">S/ 499.00</span>
+                            <span class="price-discount">S/ 499.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="card product-card">
+                    <div class="stock-badge px-3 pt-3">
+                        <span class="badge bg-success">Sin stock</span>
+                    </div>
+                    <img src="Sources/Laptops/laptop.png" class="card-img-top" alt="Producto 4" />
+                    <div class="card-body d-flex flex-column">
+                        <div class="rating mb-1">
+                            <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                            <span class="text-muted ms-1">Reviews (4)</span>
+                        </div>
+                        <p class="card-text flex-grow-1">
+                            EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-One
+                        </p>
+                        <div class="prices mt-auto">
+                            <span class="price-old">S/ 499.00</span>
+                            <span class="price-discount">S/ 499.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+                <div class="card product-card">
+                    <div class="stock-badge px-3 pt-3">
+                        <span class="badge bg-success">Sin stock</span>
+                    </div>
+                    <img src="Sources/Computadoras/pc2.png" class="card-img-top" alt="Producto 5" />
+                    <div class="card-body d-flex flex-column">
+                        <div class="rating mb-1">
+                            <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                            <span class="text-muted ms-1">Reviews (4)</span>
+                        </div>
+                        <p class="card-text flex-grow-1">
+                            EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-One
+                        </p>
+                        <div class="prices mt-auto">
+                            <span class="price-old">S/ 499.00</span>
+                            <span class="price-discount">S/ 499.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 6 -->
+                <div class="card product-card">
+                    <div class="stock-badge px-3 pt-3">
+                        <span class="badge bg-success">Sin stock</span>
+                    </div>
+                    <img src="Sources/Computadoras/pc2.png" class="card-img-top" alt="Producto 6" />
+                    <div class="card-body d-flex flex-column">
+                        <div class="rating mb-1">
+                            <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                            <span class="text-muted ms-1">Reviews (4)</span>
+                        </div>
+                        <p class="card-text flex-grow-1">
+                            EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-One
+                        </p>
+                        <div class="prices mt-auto">
+                            <span class="price-old">S/ 499.00</span>
+                            <span class="price-discount">S/ 499.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Computadoras -->
+        <section class="my-5" aria-labelledby="computadoras">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 id="computadoras" class="h4">Computadoras</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <!-- Tarjeta Principal -->
+                <div class="col">
+                    <div class="card h-100 text-white position-relative">
+                        <img src="Sources/Computadoras/Principal.png" class="card-img h-100 object-fit-cover"
+                            alt="Computadoras personalizadas" />
+                        <div
+                            class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center overlay-dark">
+                            <h5 class="fw-bold mb-2">Computadoras</h5>
+                            <a href="Pages/catalog.html" class="btn btn-outline-light btn-sm">Ver todas</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Computadoras/image 29.png" class="card-img-top" alt="Producto 1" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Computadoras/image 29-1.png" class="card-img-top" alt="Producto 2" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Computadoras/image 29-2.png" class="card-img-top" alt="Producto 3" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Computadoras/image 29-3.png" class="card-img-top" alt="Producto 4" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Computadoras/image 29-4.png" class="card-img-top" alt="Producto 5" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Laptops -->
+        <section class="my-5" aria-labelledby="laptops">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 id="laptops" class="h4">Laptops</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <!-- Tarjeta Principal -->
+                <div class="col">
+                    <div class="card h-100 text-white position-relative">
+                        <img src="Sources/Laptops/Principal.png" class="card-img h-100 object-fit-cover"
+                            alt="Laptops a Medida" />
+                        <div
+                            class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center overlay-dark">
+                            <h5 class="fw-bold mb-2">Laptops</h5>
+                            <a href="Pages/catalog.html" class="btn btn-outline-light btn-sm">Ver todas</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Laptops/image 29.png" class="card-img-top" alt="Producto 1" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Laptops/image 29-1.png" class="card-img-top" alt="Producto 2" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Laptops/image 29-2.png" class="card-img-top" alt="Producto 3" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Laptops/image 29-3.png" class="card-img-top" alt="Producto 4" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Laptops/image 29-4.png" class="card-img-top" alt="Producto 5" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Monitores -->
+        <section class="my-5" aria-labelledby="monitores">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 id="monitores" class="h4">Monitores</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <!-- Tarjeta Principal -->
+                <div class="col">
+                    <div class="card h-100 text-white position-relative">
+                        <img src="Sources/Monitores/Principal.png" class="card-img h-100 object-fit-cover"
+                            alt="Monitores Gamer" />
+                        <div
+                            class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center overlay-dark">
+                            <h5 class="fw-bold mb-2">Monitores</h5>
+                            <a href="Pages/catalog.html" class="btn btn-outline-light btn-sm">Ver todas</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Monitores/image 29.png" class="card-img-top" alt="Producto 1" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Monitores/image 29-1.png" class="card-img-top" alt="Producto 2" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Monitores/image 29-2.png" class="card-img-top" alt="Producto 3" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Monitores/image 29-3.png" class="card-img-top" alt="Producto 4" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="stock-badge px-3 pt-3">
+                            <span class="badge bg-success">En stock</span>
+                        </div>
+                        <img src="Sources/Monitores/image 29-4.png" class="card-img-top" alt="Producto 5" />
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating mb-1">
+                                <span class="text-warning">★★★★</span><span class="text-secondary">☆</span>
+                                <span class="text-muted ms-1">Reviews (4)</span>
+                            </div>
+                            <p class="card-text flex-grow-1">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                                All-In-One</p>
+                            <div class="prices mt-auto">
+                                <span class="price-old">S/ 499.00</span>
+                                <span class="price-discount">S/ 499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fila de Proveedores y Marcas -->
+        <section aria-label="Galería de imágenes" class="my-5">
+            <div class="image-row">
+                <div class="img-wrapper">
+                    <img src="Sources/Marcas/image 33-1.png" alt="Proveedor1" class="gallery-img" />
+                </div>
+                <div class="img-wrapper">
+                    <img src="Sources/Marcas/image 33-2.png" alt="Proveedor2" class="gallery-img" />
+                </div>
+                <div class="img-wrapper">
+                    <img src="Sources/Marcas/image 33-3.png" alt="Proveedor3" class="gallery-img" />
+                </div>
+                <div class="img-wrapper">
+                    <img src="Sources/Marcas/image 33-4.png" alt="Proveedor4" class="gallery-img" />
+                </div>
+                <div class="img-wrapper">
+                    <img src="Sources/Marcas/image 33-5.png" alt="Proveedor5" class="gallery-img" />
+                </div>
+                <div class="img-wrapper">
+                    <img src="Sources/Marcas/image 33-6.png" alt="Proveedor6" class="gallery-img" />
+                </div>
+                <div class="img-wrapper">
+                    <img src="Sources/Marcas/image 33.png" alt="Proveedor7" class="gallery-img" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Reviews -->
+        <section class="reviews-section">
+            <div class="reviews-container">
+                <div class="reviews-text">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam voluptatum cumque minus ipsa aspernatur
+                        eius obcaecati deleniti placeat autem laboriosam? Iste eos doloribus fugit nemo tempore dicta explicabo.
+                        Sapiente, culpa.
+                    </p>
+                </div>
+                <div class="reviews-controls">
+                    <button type="button" class="btn btn-outline-primary reviews-button">
+                        Dejar una review
+                    </button>
+                    <div class="carousel-indicators" role="tablist">
+                        <span class="carousel-indicator active" aria-label="Slide 1" role="tab" tabindex="0"></span>
+                        <span class="carousel-indicator" aria-label="Slide 2" role="tab" tabindex="-1"></span>
+                        <span class="carousel-indicator" aria-label="Slide 3" role="tab" tabindex="-1"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Soporte -->
+        <section class="container my-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Card Soporte -->
+                <div class="col">
+                    <div class="card border-0 shadow-none text-center h-100">
+                        <div class="support-icon-circle">
+                            <i class="bi bi-headset fs-1"></i>
+                        </div>
+                        <div class="card-body px-0">
+                            <h5 class="card-title fw-bold">Soporte Técnico</h5>
+                            <p class="card-text text-muted">
+                                Contamos con un Soporte Técnico especializado y personalizado a tus necesidades.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Usuario -->
+                <div class="col">
+                    <div class="card border-0 shadow-none text-center h-100">
+                        <div class="support-icon-circle">
+                            <i class="bi bi-person-circle fs-1"></i>
+                        </div>
+                        <div class="card-body px-0">
+                            <h5 class="card-title fw-bold">Cuentas Personales</h5>
+                            <p class="card-text text-muted">
+                                Con descuentos únicos, delivery a nivel nacional y soporte personalizado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Precio -->
+                <div class="col">
+                    <div class="card border-0 shadow-none text-center h-100">
+                        <div class="support-icon-circle">
+                            <i class="bi bi-credit-card fs-1"></i>
+                        </div>
+                        <div class="card-body px-0">
+                            <h5 class="card-title fw-bold">Descuentos Impresionantes</h5>
+                            <p class="card-text text-muted">
+                                Hasta un 30% de descuento en productos seleccionados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer completo -->
+    <footer class="w-100 bg-black text-white pt-4">
+        <div class="mx-auto" style="width: 80%; max-width: 1200px;">
+            <!-- Parte superior del footer -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4 gap-3">
+                <div class="text-center text-md-start">
+                    <h4 class="mb-1 fw-bold">Registrate para recibir nuestras ofertas</h4>
+                    <h5 class="text-white-50">Se el primero en recibir nuestras ofertas</h5>
+                </div>
+                <form class="d-flex w-50 w-md-auto" role="form" aria-label="Suscripción al newsletter">
+                    <input type="email" class="form-control me-2 bg-white-50" placeholder="Correo electrónico"
+                        aria-label="Correo electrónico" required>
+                    <button type="submit" class="btn btn-primary text-white px-4">Regístrate</button>
+                </form>
+            </div>
+
+            <!-- Parte inferior con 4 columnas -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mb-4">
+                <div>
+                    <h6 class="text-uppercase fw-bold mb-3">Información</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="Pages/contact_us.html" class="text-white-50 text-decoration-none">Acerca de Nosotros</a></li>
+                        <li><a href="Pages/contact_us.html" class="text-white-50 text-decoration-none">Contacto</a></li>
+                        <li><a href="Pages/contact_us.html" class="text-white-50 text-decoration-none">Preguntas frecuentes</a></li>
+                        <li><a href="Pages/contact_us.html" class="text-white-50 text-decoration-none">Soporte</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="text-uppercase fw-bold mb-3 ">Partes de Computadora</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="Pages/catalog.html" class="text-white-50 text-decoration-none ">Procesadores</a></li>
+                        <li><a href="Pages/catalog.html" class="text-white-50 text-decoration-none">Tarjetas gráficas</a></li>
+                        <li><a href="Pages/catalog.html" class="text-white-50 text-decoration-none">Memoria RAM</a></li>
+                        <li><a href="Pages/catalog.html" class="text-white-50 text-decoration-none">Almacenamiento</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="text-uppercase fw-bold mb-3">Computadoras</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="Pages/catalog.html" class="text-white-50 text-decoration-none">Gamers</a></li>
+                        <li><a href="Pages/catalog.html" class="text-white-50 text-decoration-none">De Trabajo</a></li>
+                        <li><a href="Pages/catalog.html" class="text-white-50 text-decoration-none">Todo en uno</a></li>
+                        <li><a href="Pages/catalog.html" class="text-white-50 text-decoration-none">Descuentos</a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="text-uppercase fw-bold mb-3">Laptops</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="Pages/catalog.html" class="text-white-50 text-decoration-none">Gamer</a></li>
+                        <li><a href="Pages/catalog.html" class="text-white-50 text-decoration-none">De Trabajo</a></li>
+                        <li><a href="Pages/catalog.html" class="text-white-50 text-decoration-none">Todo en Uno</a></li>
+                        <li><a href="Pages/catalog.html" class="text-white-50 text-decoration-none">Descuentos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer social -->
+            <div class="d-flex justify-content-center gap-4 pb-3 border-top border-white-25">
+                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"
+                    class="text-white fs-4">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"
+                    class="text-white fs-4">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
