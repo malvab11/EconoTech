@@ -1,0 +1,35 @@
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.98rem;
+    color: #888;
+    background: transparent;
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: "›";
+        color: #bdbdbd;
+        margin: 0 0.5em;
+    }
+
+    .breadcrumb-item {
+        a {
+            color: #4b4b4b;
+            text-decoration: none;
+            transition: color 0.2s;
+
+            &:hover {
+                color: $color-hover;
+                text-decoration: underline;
+            }
+        }
+
+        &.text-muted {
+            color: #bdbdbd;
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+}

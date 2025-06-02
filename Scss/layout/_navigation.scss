@@ -1,0 +1,28 @@
+.nav-link {
+    color: #000;
+    transition: color 0.3s;
+
+    &:hover,
+    &:focus {
+        color: $color-hover;
+        outline: none;
+    }
+}
+
+// Botones de iconos en la barra de navegación
+.d-flex.align-items-center.gap-3 {
+
+    .btn,
+    .btn i {
+        color: #000;
+    }
+
+    .btn:hover,
+    .btn:focus,
+    .btn:hover i,
+    .btn:focus i {
+        color: #000;
+        text-decoration: none;
+        outline: none;
+    }
+}
