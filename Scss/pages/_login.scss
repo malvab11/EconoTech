@@ -1,0 +1,37 @@
+.login-card {
+    background: #f5f8ff;
+    border-radius: 8px;
+    padding: 40px 32px;
+    min-height: 420px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+
+    @include media-max(991.98px) {
+        min-height: unset;
+    }
+}
+
+.login-btn {
+    background: #1667f6;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 36px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #fff;
+    transition: background 0.2s;
+
+    &:hover {
+        background: #004bcc;
+        color: #fff;
+    }
+}
+
+@include media-max(767.98px) {
+    .login-container {
+        padding: 0 10px;
+    }
+
+    .login-card {
+        padding: 28px 10px;
+    }
+}

@@ -1,0 +1,21 @@
+footer {
+    background: $color-footer;
+    color: #fff;
+    font-family: $font-family;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    a {
+        color: $color-footer-link;
+        text-decoration: none;
+        transition: color 0.3s;
+        margin: 0 0.5rem;
+
+        &:hover,
+        &:focus {
+            color: $color-footer-link-hover;
+            text-decoration: underline;
+            outline: none;
+        }
+    }
+}

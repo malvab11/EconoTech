@@ -1,0 +1,33 @@
+.container-80 {
+    width: $container-width;
+    max-width: $container-max-width;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.image-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.img-wrapper {
+    flex: 0 0 auto;
+}
+
+.gallery-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+    &[alt^="Proveedor"] {
+        max-height: 80px;
+        object-fit: contain;
+    }
+}

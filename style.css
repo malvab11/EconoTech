@@ -83,7 +83,6 @@ body {
 }
 
 /* Carrusel principal */
-/* (Aquí puedes añadir estilos para el carrusel si lo tienes) */
 
 /* Carrusel de productos */
 .product-carousel {
@@ -315,8 +314,6 @@ footer a:focus {
     text-decoration: underline;
     outline: none;
 }
-
-/* Nuevas clases extraídas de estilos en línea del HTML */
 
 /* Contenedor con ancho 80% y max-width 1200px centrado */
 .container-80 {

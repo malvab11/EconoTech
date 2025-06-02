@@ -1,0 +1,22 @@
+.login-btn {
+  background: #1667f6;
+  border: none;
+  border-radius: 24px;
+  padding: 10px 36px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #fff;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #004bcc;
+    color: #fff;
+  }
+}
+
+.reviews-button {
+  background: transparent;
+  color: $color-hover;
+  border-color: $color-hover;
+  font-weight: 600;
+}
