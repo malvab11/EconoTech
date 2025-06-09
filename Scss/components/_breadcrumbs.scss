@@ -3,33 +3,35 @@
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    margin: 0;
-    font-size: 0.98rem;
-    color: #888;
-    background: transparent;
-
-    .breadcrumb-item+.breadcrumb-item::before {
-        content: "›";
-        color: #bdbdbd;
-        margin: 0 0.5em;
-    }
+    margin: 1.5rem 0;
+    background-color: transparent;
 
     .breadcrumb-item {
+        font-size: 0.95rem;
+
         a {
-            color: #4b4b4b;
             text-decoration: none;
-            transition: color 0.2s;
+            color: $color-hover;
 
             &:hover {
-                color: $color-hover;
                 text-decoration: underline;
             }
         }
 
-        &.text-muted {
-            color: #bdbdbd;
-            pointer-events: none;
-            cursor: default;
+        &::after {
+            padding: 0 0.5rem;
+            color: #6c757d;
+        }
+
+        &:last-child {
+            a {
+                color: #6c757d;
+                cursor: default;
+            }
+
+            &::after {
+                content: "";
+            }
         }
     }
 }

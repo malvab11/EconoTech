@@ -1,11 +1,13 @@
-.container-80 {
+.contenedor-general {
+    margin: 3rem 0;
     width: $container-width;
     max-width: $container-max-width;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     box-sizing: border-box;
 }
 
-.image-row {
+.fila-imagenes {
     display: flex;
     gap: 2rem;
     flex-wrap: nowrap;
@@ -17,11 +19,11 @@
     }
 }
 
-.img-wrapper {
+.contenedor-imagen {
     flex: 0 0 auto;
 }
 
-.gallery-img {
+.imagen-galeria {
     max-width: 100%;
     height: auto;
     display: block;
