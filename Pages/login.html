@@ -71,96 +71,94 @@
             </ol>
         </nav>
 
-        <div class="container login-container">
-            <h2 class="mb-3 fw-bold">Login Usuario</h2>
-            <div class="row g-4">
-                <!-- Registered Customers -->
-                <div class="col-12 col-lg-7">
-                    <div class="login-card h-100">
-                        <h5 class="fw-bold mb-2">Registro de Usuario</h5>
-                        <p class="mb-3" style="font-size: 0.96rem;">
-                            Si ya tienes una cuenta, ingresa sesión con tu correo electrónico
-                        </p>
-                        <form>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Correo Electrónico <span
-                                        class="text-danger">*</span></label>
-                                <input type="email" class="form-control" id="email" placeholder="example@example.com"
-                                    required>
+        <div class="seccion-contacto">
+            <main class="contacto-principal">
+                <section class="formulario-contacto">
+                    <h2 class="formulario-titulo">Login Usuario</h2>
+                    <h4 class="formulario-subtitulo">Registro de Usuario</h4>
+                    <p class="formulario-subtitulo">Si ya tienes una cuenta, ingresa sesión con tu correo electrónico
+                    </p>
+
+                    <form>
+                        <div class="grupo-campos-login">
+                            <div class="campo mitad">
+                                <label for="email" class="campo-label">Correo Electronico <span
+                                        class="requerido">*</span></label>
+                                <input type="email" id="email" placeholder="example@example.com" required>
                             </div>
-                            <div class="mb-4">
-                                <label for="password" class="form-label">Contraseña <span
-                                        class="text-danger">*</span></label>
-                                <input type="password" class="form-control" id="password" placeholder="Contraseña"
-                                    required>
+                            <div class="campo mitad">
+                                <label for="password" class="campo-label">Contraseña <span
+                                        class="requerido">*</span></label>
+                                <input type="password" id="password" placeholder="Contraseña" required>
                             </div>
-                            <div class="d-flex align-items-center">
-                                <button type="submit" class="login-btn me-3">Iniciar Sesion</button>
-                                <a href="#" class="forgot-link">¿Olvidaste tu Contraseña?</a>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="botones-grupo">
+                            <button type="submit" class="boton-enviar">Iniciar Sesion</button>
+                            <button type="submit" class="boton-enviar">¿Olvidaste tu Contraseña?</button>
+                        </div>
+                    </form>
+                </section>
+            </main>
+
+            <aside class="panel-contacto">
+                <div class="panel-contenido">
+                    <p class="panel-titulo">Nuevo Usuario</p>
+                    <p class="panel-texto">
+                        Crear una cuenta, tiene varios beneficios:
+                    </p>
+                    <ul>
+                        <li>Envio Prioritario</li>
+                        <li>Registra más de una dirección</li>
+                        <li>Obtén las ultimas ofertas de manera inmediata</li>
+                        <li>Descuentos únicos para los usuarios</li>
+                    </ul>
+                    <button class="btn-custom">Registrate</button>
                 </div>
-                <!-- New Customer -->
-                <div class="col-12 col-lg-5">
-                    <div class="login-card h-100">
-                        <h5 class="fw-bold mb-2">Nuevo Usuario</h5>
-                        <p class="mb-3" style="font-size: 0.96rem;">
-                            Crear una cuenta, tiene varios beneficios:
-                        </p>
-                        <ul class="mb-4" style="font-size: 0.96rem;">
-                            <li>Envio Prioritario</li>
-                            <li>Registra más de una dirección</li>
-                            <li>Obtén las ultimas ofertas de manera inmediata</li>
-                            <li>Descuentos únicos para los usuarios</li>
-                        </ul>
-                        <button class="login-btn">Registrate</button>
-                    </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Sección de Soporte -->
+    <section class="support-section">
+        <div class="support-grid">
+            <!-- Card Soporte -->
+            <div class="support-card">
+                <div class="support-icon-circle">
+                    <i class="bi bi-headset"></i>
+                </div>
+                <div class="support-card-body">
+                    <h5 class="support-title">Soporte Técnico</h5>
+                    <p class="support-text">
+                        Contamos con un Soporte Técnico especializado y personalizado a tus necesidades.
+                    </p>
+                </div>
+            </div>
+            <!-- Card Usuario -->
+            <div class="support-card">
+                <div class="support-icon-circle">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+                <div class="support-card-body">
+                    <h5 class="support-title">Cuentas Personales</h5>
+                    <p class="support-text">
+                        Con descuentos únicos, delivery a nivel nacional y soporte personalizado.
+                    </p>
+                </div>
+            </div>
+            <!-- Card Precio -->
+            <div class="support-card">
+                <div class="support-icon-circle">
+                    <i class="bi bi-credit-card"></i>
+                </div>
+                <div class="support-card-body">
+                    <h5 class="support-title">Descuentos Impresionantes</h5>
+                    <p class="support-text">
+                        Hasta un 30% de descuento en productos seleccionados.
+                    </p>
                 </div>
             </div>
         </div>
-
-        <!-- Sección de Soporte -->
-        <section class="support-section">
-            <div class="support-grid">
-                <!-- Card Soporte -->
-                <div class="support-card">
-                    <div class="support-icon-circle">
-                        <i class="bi bi-headset"></i>
-                    </div>
-                    <div class="support-card-body">
-                        <h5 class="support-title">Soporte Técnico</h5>
-                        <p class="support-text">
-                            Contamos con un Soporte Técnico especializado y personalizado a tus necesidades.
-                        </p>
-                    </div>
-                </div>
-                <!-- Card Usuario -->
-                <div class="support-card">
-                    <div class="support-icon-circle">
-                        <i class="bi bi-person-circle"></i>
-                    </div>
-                    <div class="support-card-body">
-                        <h5 class="support-title">Cuentas Personales</h5>
-                        <p class="support-text">
-                            Con descuentos únicos, delivery a nivel nacional y soporte personalizado.
-                        </p>
-                    </div>
-                </div>
-                <!-- Card Precio -->
-                <div class="support-card">
-                    <div class="support-icon-circle">
-                        <i class="bi bi-credit-card"></i>
-                    </div>
-                    <div class="support-card-body">
-                        <h5 class="support-title">Descuentos Impresionantes</h5>
-                        <p class="support-text">
-                            Hasta un 30% de descuento en productos seleccionados.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    </section>
     </div>
     <!-- Footer completo -->
     <footer class="footer">
