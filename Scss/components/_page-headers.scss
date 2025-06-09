@@ -1,0 +1,48 @@
+.page-header {
+    display: flex;
+    flex-direction: row; // fila desde el inicio
+    align-items: center; // centrado vertical
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    h2 {
+        font-weight: 700;
+        margin-bottom: 0; // sin margen abajo para que no empuje
+    }
+
+    .filters {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        select.form-select {
+            font-size: 0.875rem;
+            padding: 0.25rem 0.5rem;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            background-color: #fff;
+
+            min-width: 130px;
+
+            &:first-child {
+                min-width: 150px;
+            }
+
+            &:focus {
+                outline: none;
+                border-color: #0d6efd;
+                box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+            }
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        /* Opcional: en pantallas muy chicas apilar */
+        flex-direction: column;
+        align-items: flex-start;
+
+        h2 {
+            margin-bottom: 0.5rem;
+        }
+    }
+}

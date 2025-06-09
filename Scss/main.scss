@@ -8,21 +8,22 @@
 
 // layout
 @import 'layout/header';
-@import 'layout/navigation';
 @import 'layout/footer';
 @import 'layout/grid';
 @import 'layout/container';
+@import 'layout/top-header';
+@import 'layout/sections';
 
 // components
 @import 'components/buttons';
 @import 'components/cards';
-@import 'components/badges';
 @import 'components/carousel';
 @import 'components/breadcrumbs';
 @import 'components/forms';
-@import 'components/rating';
+@import 'components/page-headers';
+
 
 // pages
-@import 'pages/home';
 @import 'pages/login';
-@import 'pages/products';
+@import 'pages/catalog';
+@import 'pages/index';

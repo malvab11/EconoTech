@@ -1,0 +1,58 @@
+.top-header {
+    background-color: #000;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 700;
+
+    .contenedor {
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+
+    .horarios-atencion {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 0.25rem;
+        text-align: left;
+    }
+
+    .direccion {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 0.25rem;
+        text-align: center;
+    }
+
+    .telefono-contacto {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    @media (min-width: 768px) {
+
+        .horarios-atencion,
+        .direccion,
+        .telefono-contacto {
+            flex: 0 0 33.3%;
+            max-width: 33.3%;
+            margin-bottom: 0;
+        }
+
+        .horarios-atencion {
+            text-align: left;
+        }
+
+        .direccion {
+            text-align: center;
+        }
+
+        .telefono-contacto {
+            text-align: right;
+        }
+    }
+}

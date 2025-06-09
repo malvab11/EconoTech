@@ -1,10 +1,7 @@
 // Colores
-$color-hover: #0156FF;
+$color-background-reviews: #f9f9f9;
 $color-footer: #000;
 $color-footer-link: #bbb;
-$color-footer-link-hover: #0d6efd;
-$color-stock-badge: white;
-$color-rating: #f5a623;
 
 // Tipografía
 $font-family: 'Poppins', sans-serif;
@@ -16,6 +13,18 @@ $card-width-desktop: 250px;
 $card-width-mobile: 200px;
 $card-max-height: 350px;
 $card-img-height: 150px;
+
+// Badges
+$color-text-badge: white;
+$color-stock-badge: #198754;
+$color-sin-stock-badge: #dc3545;
+
+// Rating
+$color-rating: #f5a623;
+
+// Botones
+$color-hover: #007bff;
+$color-primary-text-boton: #fff;
 
 // Otros
 $container-max-width: 1200px;

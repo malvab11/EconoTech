@@ -1,55 +1,68 @@
-.top-header {
-    width: 100%;
-    background: #000;
-    color: #fff;
-    font-weight: 700;
-    font-size: $font-size-footer;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
 
-    .container-80 {
-        width: $container-width;
-        max-width: $container-max-width;
-        margin: 0 auto;
-        box-sizing: border-box;
-        padding: 0.5rem 0;
-    }
-
-    .row {
+    .logo {
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
+
+        img {
+            height: 50px;
+            width: auto;
+        }
     }
 
-    .col-start,
-    .col-center,
-    .col-end {
-        flex: 1 1 33.33%;
+    .navegacion-principal {
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            padding: 0;
+            margin: 0;
+
+            li {
+                a {
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: #000;
+                    transition: color 0.3s ease;
+
+                    &:hover,
+                    &:focus {
+                        color: $color-hover;
+                        outline: none;
+                    }
+                }
+            }
+        }
     }
 
-    .col-start {
-        text-align: start;
-    }
+    .acciones-usuario {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
 
-    .col-center {
-        text-align: center;
-    }
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            color: #000;
+            font-size: 1.25rem;
+            transition: color 0.3s ease;
 
-    .col-end {
-        text-align: end;
-    }
-
-    @include media-max(767.98px) {
-        .row {
-            flex-direction: column;
-            text-align: center;
+            &:hover,
+            &:focus {
+                color: $color-hover;
+                outline: none;
+            }
         }
 
-        .col-start,
-        .col-center,
-        .col-end {
-            flex: 1 1 100%;
-            margin-bottom: 0.25rem;
-            text-align: center !important;
+        a {
+            text-decoration: none;
         }
     }
 }
