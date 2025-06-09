@@ -349,6 +349,9 @@ body {
   border-radius: 0.25rem;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
 }
 .btn-custom:hover {
   background-color: #007bff;
@@ -840,6 +843,209 @@ body {
 .vista-toggle .vista-btn.secondary:hover, .vista-toggle .vista-btn.secondary:focus {
   background-color: #6c757d;
   color: white;
+}
+
+.seccion-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .seccion-contacto {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.contacto-principal {
+  flex: 1;
+}
+
+.formulario-contacto .formulario-titulo {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.formulario-contacto .formulario-subtitulo {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+.formulario-contacto form .grupo-campos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .formulario-contacto form .grupo-campos {
+    flex-direction: row;
+  }
+}
+.formulario-contacto form .grupo-campos-login {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .formulario-contacto form .grupo-campos-login {
+    flex-direction: row;
+  }
+}
+.formulario-contacto form .campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.formulario-contacto form .campo.mitad {
+  flex: 1;
+}
+.formulario-contacto form .campo input,
+.formulario-contacto form .campo textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+.formulario-contacto form .campo-label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.formulario-contacto form .requerido {
+  color: red;
+}
+.formulario-contacto form .botones-grupo {
+  display: flex;
+  gap: 1rem;
+}
+.formulario-contacto form .botones-grupo .boton-enviar {
+  flex: 1;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+.formulario-contacto form .botones-grupo .boton-enviar:hover {
+  background-color: #0b5ed7;
+}
+
+.panel-contacto {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .panel-contacto {
+    width: 320px;
+    margin-bottom: 0;
+  }
+}
+.panel-contacto .panel-contenido {
+  background-color: #f5f7ff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+.panel-contacto .panel-titulo {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.product-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 768px) {
+  .product-detail-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.product-detail-container .product-image {
+  flex: 1;
+  max-width: 500px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.product-detail-container .product-image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  border-radius: 4px;
+  padding: 1rem;
+  background: #fff;
+}
+.product-detail-container .product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #333;
+}
+.product-detail-container .product-info .product-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.product-detail-container .product-info .product-rating {
+  font-size: 0.9rem;
+  color: #f5a623;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.product-detail-container .product-info .product-rating .text-secondary {
+  color: #ccc !important;
+}
+.product-detail-container .product-info .product-rating .reviews-count {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+.product-detail-container .product-info .product-prices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.product-detail-container .product-info .product-prices .price-old {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-decoration: line-through;
+}
+.product-detail-container .product-info .product-prices .price-discount {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #000;
+}
+.product-detail-container .product-info .product-description {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.4;
+}
+.product-detail-container .product-info .btn-add-cart {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+.product-detail-container .product-info .btn-add-cart:hover {
+  background-color: #0062cc;
 }
 
 .reviews-section {
