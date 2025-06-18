@@ -76,10 +76,27 @@
             }
         }
 
-        .product-description {
-            font-size: $font-size-text;
-            color: #333;
+        .product-description ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .product-description li {
+            margin-bottom: 6px;
             line-height: 1.4;
+        }
+
+        .product-description strong {
+            display: inline-block;
+            min-width: 120px;
+            color: #222;
+        }
+
+        .product-description p {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: #666;
         }
 
         .btn-add-cart {

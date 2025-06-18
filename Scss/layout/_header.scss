@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
@@ -63,6 +64,33 @@
 
         a {
             text-decoration: none;
+        }
+    }
+    @include media-max($breakpoint-md) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+        .logo {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .navegacion-principal {
+            width: 100%;
+
+            ul {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                gap: 1rem;
+            }
+        }
+
+        .acciones-usuario {
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
     }
 }

@@ -13,23 +13,44 @@
     flex-wrap: nowrap;
     overflow-x: auto;
     scrollbar-width: none;
+    scroll-snap-type: x mandatory;
 
     &::-webkit-scrollbar {
         display: none;
     }
-}
 
-.contenedor-imagen {
-    flex: 0 0 auto;
-}
+    .contenedor-imagen {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
 
-.imagen-galeria {
-    max-width: 100%;
-    height: auto;
-    display: block;
+        .imagen-galeria {
+            max-width: 100%;
+            height: auto;
+            display: block;
 
-    &[alt^="Proveedor"] {
-        max-height: 80px;
-        object-fit: contain;
+            &[alt^="Proveedor"] {
+                max-height: 80px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    // Versión móvil: columna centrada
+    @include media-max($breakpoint-sm) {
+        flex-direction: column;
+        align-items: center; // Centra los elementos hijos
+        justify-content: center; // Centra si hay espacio vertical
+        overflow-x: hidden; // Quita scroll horizontal
+        overflow-y: auto;
+
+        .contenedor-imagen {
+            width: 100%;
+            display: flex;
+            justify-content: center; // Centra la imagen horizontalmente
+
+            .imagen-galeria {
+                max-width: 80%; // Ajusta el tamaño de la imagen
+            }
+        }
     }
 }
