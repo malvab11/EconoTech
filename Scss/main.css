@@ -230,8 +230,8 @@ body {
   gap: 1.5rem;
 }
 .product-list-container .product-grid .product-card {
-  flex: 0 0 calc(33.333% - 1rem);
-  max-width: calc(33.333% - 1rem);
+  flex: 0 0 calc(33.3333% - 2rem);
+  max-width: calc(33.3333% - 2rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -848,6 +848,110 @@ body {
   }
   .page-header h2 {
     margin-bottom: 0.5rem;
+  }
+}
+
+.tabla-carrito {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+.tabla-carrito th,
+.tabla-carrito td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+.tabla-carrito thead {
+  background-color: #f9f9f9;
+}
+.tabla-carrito thead th {
+  font-weight: 700;
+}
+.tabla-carrito .item-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+.tabla-carrito .item-info img {
+  width: 80px;
+  height: auto;
+  border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tabla-carrito .item-info .descripcion p {
+  margin: 0;
+  font-weight: 500;
+}
+.tabla-carrito .item-info .descripcion small {
+  color: #6c757d;
+}
+.tabla-carrito .cantidad-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.tabla-carrito .cantidad-control button {
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  border-radius: 4px;
+}
+.tabla-carrito .cantidad-control button:hover {
+  background-color: #f0f0f0;
+}
+.tabla-carrito .cantidad-control input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .tabla-carrito thead {
+    display: none;
+  }
+  .tabla-carrito tbody,
+  .tabla-carrito tr,
+  .tabla-carrito td {
+    display: block;
+    width: 100%;
+  }
+  .tabla-carrito tr {
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .tabla-carrito td {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    position: relative;
+  }
+  .tabla-carrito td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #6c757d;
+    font-size: 0.85rem;
+  }
+  .tabla-carrito .item-info {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .tabla-carrito .item-info img {
+    width: 60px;
+  }
+  .tabla-carrito .cantidad-control {
+    justify-content: flex-start;
   }
 }
 
